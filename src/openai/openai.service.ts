@@ -15,7 +15,7 @@ export class OpenAIService {
     constructor() {
         const apiKey = process.env.OPENAI_API_KEY;
         if (!apiKey) {
-            throw new Error('An error occurred in the OpenAI API Key');
+            throw new Error('An error occurred at OpenAI API Key');
         }
         this.openAI = new OpenAI({
             apiKey: apiKey,
